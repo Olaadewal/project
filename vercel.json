@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/**", // Adjust the path to match your assets directory
+      "src": "api/**",
       "use": "@vercel/static"
     },
     {
