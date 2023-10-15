@@ -5,10 +5,9 @@
     }
   },
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
+   
     { "src": "/static/assets/css/(.*)", "dest": "/static/assets/css/$1" },
     { "src": "/static/assets/js/(.*)", "dest": "/static/assets/js/$1" },
-    { "src": "/(.+\\.php)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/api/static/$1" }
+   
   ]
 }
