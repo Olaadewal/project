@@ -11,3 +11,11 @@
 { "src": "/(.*)", "dest": "/api/static/assets/css/style.css" },
 { "src": "/(.*)", "dest": "/api/static/assets/js/script.js" }]
 }
+
+{
+  "rewrites": [
+    { "source": "/(.+\\.php)", "destination": "/api/php-handler" },
+    { "source": "/css/(.*)", "destination": "/css/$1" }
+  ]
+}
+
