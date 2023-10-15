@@ -1,21 +1,12 @@
-
-
-{
-"functions": {
-"api/**/*.php": {
-"runtime": "vercel-php@0.6.0"
-}
-},
-"routes": [
-{ "src": "/(.*)", "dest": "/api/index.php" },
-{ "src": "/(.*)", "dest": "/api/static/assets/css/style.css" },
-{ "src": "/(.*)", "dest": "/api/static/assets/js/script.js" }]
-}
-
 {
   "rewrites": [
-    { "source": "/(.+\\.php)", "destination": "/api/php-handler" },
-    { "source": "/css/(.*)", "destination": "/css/$1" }
+    { "source": "/api/(.+\\.php)", "destination": "/api/$1" },
+    { "source": "/static/(.*)", "destination": "/static/$1" }
+  ],
+  "routes": [
+    { "src": "/api/(.+\\.php)", "dest": "/api/$1" },
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.+\\.php)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/static/$1" }
   ]
 }
-
