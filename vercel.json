@@ -1,8 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/api/(.+\\.php)", "destination": "/api/$1" },
-    { "source": "/static/(.*)", "destination": "/static/$1" },
-    { "source": "/(.+\\.php)", "destination": "/api/$1" },
-    { "source": "/(.*)", "destination": "/static/$1" }
+  "routes": [
+    { "src": "/api/(.+\\.php)", "dest": "/api/$1" },
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.+\\.php)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/static/$1" }
   ]
 }
